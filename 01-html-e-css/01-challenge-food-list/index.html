@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            /*border: none;
+            padding: none;*/
+            box-sizing: border-box;
+        }
+        body {
+            background: black;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        table {
+            font-size: 3rem;
+            margin: 4rem auto 0 auto;
+            border: 1px white solid;
+            width: 50%;
+        }
+
+        td {
+            border-top: 1px white solid;
+        }
+
+        th {
+            border-left: solid 1px white;
+        }
+
+        .preco {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Healthy Foods</h1>
+    <table>
+        <!-- <caption>Healthy Foods</caption> -->
+        <thead>
+            <tr>
+                <th>Foods</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pizza</td>
+                <td class="preco">R$ 10,00</td>
+            </tr>
+            <tr>
+                <td>Hamburguer</td>
+                <td class="preco">R$ 10,00</td>
+            </tr>
+            <tr>
+                <td>Ice</td>
+                <td class="preco">R$ 10,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+              <td class="preco" colspan="1">Total Price:</td>
+              <td class="preco">$30,00</td>
+            </tr>
+          </tfoot>
+    </table>
+</body>
+</html>
