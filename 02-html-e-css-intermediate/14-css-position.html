@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: black;
+        }
+
+        .elemento {
+            color: white;
+            font-size: 32px;
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .elemento-estatico {
+            position: static;
+            background-color: red;
+        }
+
+        .elemento-relativo {
+            position: relative;
+            left: 20px;
+            background-color: aquamarine;
+        }
+
+        .elemento-absoluto {
+            position: absolute;
+            left: 10px;
+            top: 0;
+            background-color: blueviolet;
+        }
+
+        .elemento-relativo-com-filho {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            background: yellow;
+        }
+
+        .elemento-absoluto-com-pai {
+            position: absolute;
+            right: 0;
+
+            width: 150px;
+            height: 150px;
+            background-color: plum;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="elemento elemento-estatico">
+        static
+    </div>
+
+    <div class="elemento elemento-relativo">
+        relative
+    </div>
+
+    <div class="elemento elemento-absoluto">
+        absolute
+    </div>
+
+    <div class="elemento elemento-estatico">
+        static outro
+    </div>
+
+    <div class="elemento elemento-relativo-com-filho">
+        <div class="elemento elemento-absoluto-com-pai">
+            absoluto com pai
+        </div>
+
+    </div>
+</body>
+</html>
