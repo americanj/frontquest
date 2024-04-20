@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+        }
+
+        .container {
+            background-color: gray;
+            height: 300px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            width: 250px;
+            height: 50px;
+            background-color: lightpink;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .texto-centralizado-2 {
+            position: absolute;
+            /*referente ao pai*/
+            top: 50%;
+
+            /*referente ao conteudo*/
+            transform: translateY(-50%);
+
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .alinhado-margin-auto {
+            display: block;
+            margin: auto;
+        }
+
+        .alinhado-absolute {
+            position: absolute;
+            /*margin nao funciona com position absolute, mas zerando as direções ele funciona*/
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .container-text-align img {
+            width: 500px;
+        }
+
+        .container-text-align {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>centralizar</h1>
+
+    <div class="container">
+        <p class="texto-centralizado-2">texto centralizado</p>
+    </div>
+
+    <div class="container">
+        <button class="btn alinhado-margin-auto">Um botao</button>
+    </div>
+
+    <div class="container">
+        <button class="btn alinhado-absolute">Um botao</button>
+    </div>
+
+    <div class="container-text-align">
+        <img src="cat.webp" alt="">
+    </div>
+</body>
+</html>
