@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            color: white;
+            background: black;
+        }
+
+        section {
+            border: solid 1px greenyellow;
+        }
+
+        .float .right {
+            float: right;
+            background-color: chocolate;
+            width: 100px;
+            height: 100px;
+        }
+
+        .float .left {
+            float: left;
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+        }
+
+        .float::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        img {
+            width: 100px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        /*Usava-se o float pq n tinha propriedades melhores de pocionamento mas hoje em dia temos o display flex e grid.*/
+
+
+    </style>
+</head>
+<body>
+    <h1>Float</h1>
+
+    <section class="float">
+        <div class="left">Bloco 1</div>
+        <div class="right">Bloco 2</div>
+    </section>
+
+    <section class="float-blog">
+        <img src="cat.webp" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem culpa animi sunt harum distinctio. Id vero, numquam porro assumenda quasi, quisquam, blanditiis vitae aspernatur pariatur est reprehenderit architecto ex minima.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores quibusdam fuga repellat repudiandae natus accusantium beatae a quod, nisi incidunt aliquam perferendis cupiditate maiores quam delectus veniam esse nulla officiis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, vitae doloremque cum pariatur obcaecati ab repellat eligendi earum accusamus ut numquam reiciendis voluptatum maiores consectetur sed similique, quibusdam asperiores corporis.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae laudantium placeat, nobis dolorum atque soluta, velit ex temporibus nisi dignissimos labore similique itaque consectetur veritatis suscipit reprehenderit aspernatur error.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis a consectetur assumenda, alias, magnam fuga labore dolore nihil, aliquam saepe itaque molestiae incidunt doloremque? Provident quo cum similique at sapiente!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsa iusto voluptatem, natus rem nulla quia perferendis illo corporis aut quo dolore voluptas sunt quis ipsam vitae voluptatibus molestiae magnam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui aut, quasi natus, officiis consequuntur autem ab accusamus tempora voluptas quas dolor nesciunt? Magni, hic laboriosam quidem repellat explicabo earum?
+        </p>
+
+    </section>
+</body>
+</html>
