@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+        p:nth-child(2) {
+            color: red;
+        }
+
+        /*Classe que vai ser negada*/
+        p:not(.padrao) {
+            text-decoration: underline;
+        }
+
+        /*Vai pegar todos impares*/
+        p:nth-child(odd) {
+            border: solid 1px greenyellow;
+        }
+
+        /*Even pares*/
+        p:nth-child(even) {
+            border: solid 1px purple;
+        }
+
+        /*Vai estilizar 3 em 3*/
+        /*li:nth-child(3n) {
+            color: blue;
+        }*/
+
+        /*Estilizar do 3 ao 5*/
+        li:nth-child(n+3):nth-child(-n+5) {
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo class</h1>
+
+    <h2>First Child</h2>
+    <div>
+        <p>primeiro</p>
+        <p>segundo</p>
+        <p class="padrao">terceiro</p>
+        <p>quarto</p>
+    </div>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+    </ul>
+</body>
+</html>
