@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        p::first-letter {
+            color: red;
+            font-size: 2rem;
+        }
+
+        p::first-line {
+            color: yellow;
+        }
+
+        /*Aqueles pontinhos de uma lista, ele muda a cor*/
+        li::marker {
+            color: greenyellow;
+        }
+
+        h2::before {
+            content: url("https://placehold.co/20x20");
+        }
+
+    </style>
+</head>
+<body>
+    <h1>pseudo elementos</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, facilis dolor odit esse error at voluptatibus itaque aperiam quo minus dignissimos neque corporis expedita culpa cum! Tempora reprehenderit magnam itaque.</p>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+
+    <!--Jeito errado de fazer, pois está carregando 3 img-->
+    <h2>
+        <img src="https://placehold.co/30x30" alt="">
+        Meu titulo 1
+    </h2>
+    <h2>
+        <img src="https://placehold.co/30x30" alt="">
+        Meu titulo 2
+    </h2>
+    <h2>
+        <img src="https://placehold.co/30x30" alt="">
+        Meu titulo 3
+    </h2>
+
+        <!--Jeito correto pelo css-->
+        <h2>
+            Meu titulo com jeito certo 1
+        </h2>
+        <h2>
+            Meu titulo com jeito certo 2
+        </h2>
+        <h2>
+            Meu titulo com jeito certo 3
+        </h2>
+</body>
+</html>
