@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*representa a tag html*/
+        :root {
+            /*-- sintax da variavel.*/
+            --cor-red: red;
+        }
+
+        h2 {
+            /*a segundo cor é caso der problema use a azul*/
+            color: var(--cor-red, blue);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>variaveis</h1>
+
+    <h2>titulo 2</h2>
+    <h3>t 3</h2>
+    <p>texto do parafrafo</p>
+    <span>texto do span</span>
+
+</body>
+</html>
