@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img.scale {
+            /*aumenta 1x no eixo x e 2x no eixo y.*/
+            transform: scale(1, 1);
+        }
+
+        img.rotate {
+            transform: rotate(0deg);
+        }
+
+        img.translate {
+            /*eixo x eixo y*/
+            transform: translate(100px, 200px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transform</h1>
+
+    <h2>Transform Scale</h2>
+    <img class="scale rotate translate" src="https://www.placehold.co/200" alt="">
+</body>
+</html>
