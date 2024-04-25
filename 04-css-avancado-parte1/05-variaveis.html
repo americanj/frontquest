@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <style>
-        /*representa a tag html*/
+        /*representa a tag html / variavel global*/
         :root {
             /*-- sintax da variavel.*/
             --cor-red: red;
@@ -16,6 +16,12 @@
             /*a segundo cor é caso der problema use a azul*/
             color: var(--cor-red, blue);
             font-size: 20px;
+        }
+
+        h3 {
+            /*variabel local*/
+            --cor-padrao-local: green;
+            color: var(--cor-padrao-local);
         }
     </style>
 </head>
