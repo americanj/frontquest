@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /*seletores*/
+        h1 {
+            color: goldenrod;
+        }
+
+        p {
+
+        }
+
+        .algo {
+
+        }
+
+        #titulo {
+
+        }
+        .parafrafo {
+            border: solid 1px yellow;
+        }
+
+        .parafrafo.red {
+            color: red;
+        }
+
+        /*lembrando que tem q estar grudado se nao perde o efeito.*/
+        .parafrafo.azul {
+            color: aqua;
+        }
+
+        .sobre, .contato {
+            font-size: 30px;
+        }
+
+        /*estliza o primeiro p/elemento que venham depois de uma tag div/elemento*/
+        div + p {
+            background-color: chocolate;
+        }
+
+        /*seletor com atributo*/
+        a[target=_blank] {
+            color: deeppink;
+        } 
+    </style>
+</head>
+<body>
+    <h1>seletores</h1>
+
+    <h2>duas classes</h2>
+    <p class="parafrafo red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt unde, et maxime nesciunt voluptatibus natus saepe molestias nam omnis architecto aliquam, sint possimus earum ad similique harum? Sequi, enim qui?</p>
+
+    <p class="parafrafo azul">rasasaskjasjas</p>
+
+    <p class="sobre">eu sou eu</p>
+    <p class="contato">40028922</p>
+
+    <h2>usando seletor +</h2>
+    <!--Obs msm hierarquia-->
+    <div>123</div>
+    <p>p texto 1 depois da div</p>
+    <p>p texto 2 depois da div</p>
+
+    <h2>estilizacao com atributo</h2>
+    <a href="/" target="_blank">clica corno</a>
+    <a href="/">clica corno</a>
+</body>
+</html>
