@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            max-width: 400px;
+            border: 1px solid red;
+
+        }
+
+        .item {
+            background-color: purple;
+            font-size: 20px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .justify-content .item1, .justify-content .item3 {
+            width: 80px;
+        }
+
+        .flex-start {
+
+            /*padrao*/
+            justify-content: flex-start;
+            /*center*/
+            justify-content: center;
+            /*espaço entre eles até a borda do pai*/
+            justify-content: space-between;
+            /*espaço em volta*/
+            justify-content: space-around;
+            /*espaço similar ao space-between mas esse deixa espaços exatamente iguais.*/
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Flex container - justify content</h1>
+
+    <section>
+        <h2>Flex-start</h2>
+
+        <div class="container flex-start">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+
+        </div>
+    </section>
+</body>
+</html>
