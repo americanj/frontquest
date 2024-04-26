@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+        .container {
+            height: 200px;
+            border: solid 1px greenyellow;
+
+        }
+
+        .item {
+            width: 50px;
+
+            background: red;
+            margin: 5px;
+        }
+
+     
+
+        .flex-start {
+            display: flex;
+            flex-direction: row;
+            
+            align-items: flex-end;
+            align-items: center;
+
+            /*ele vai esticar os elementos filhos para caber dentro dele por completo / lembrando que se o filho tiver tamanho fixo n vai funfa*/
+            align-items: stretch;
+
+            /*vai alinhar pela linha*/
+            align-items: baseline;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>flex-start</h2>
+
+        <div class="container flex-start">
+            <div class="item item1">item 1</div>
+            <div class="item item1">item 1</div>
+            <div class="item item1">item 1</div>
+        </div>
+    </section>
+</body>
+</html>
