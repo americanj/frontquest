@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grow-0 {
+            flex-grow: 0;
+        }
+
+        .grow-1 {
+            flex-grow: 1;
+        }
+
+        .grow-2 {
+            flex-grow: 2;
+        }
+
+        .grow-3 {
+            flex-grow: 3;
+        }
+
+        body {
+            background: black;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            height: 200px;
+            border: solid 1px red;
+            flex-direction: row;
+        }
+
+        .item {
+            display: flex;
+            width: 50px;
+            height: 50px;
+            background: blue;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Grow</h2>
+        <div class="container">
+            <div class="item grow-0">0</div>
+            <div class="item grow-1">1</div>
+            <div class="item grow-2">2</div>
+            <div class="item grow-3">3</div>
+        </div>
+    </section>
+</body>
+
+</html>
