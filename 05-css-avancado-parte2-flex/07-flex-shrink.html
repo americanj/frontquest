@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            height: 200px;
+            border: solid 1px red;
+            flex-direction: row;
+
+        
+        }
+
+        .item {
+            display: flex;
+            height: 50px;
+            background: blue;
+            margin: 5px;
+        }
+
+        .flex-shrink-1 {
+            flex-shrink: 1;
+        }
+
+        .flex-shrink-0 {
+            flex-shrink: 0;
+        }
+
+        .flex-shrink-2 {
+            flex-shrink: 2;
+        }
+
+        .flex-shrink-3 {
+            flex-shrink: 3;
+        }
+
+        .grow-1 {
+            flex-grow: 1;
+        }
+
+        .shrink .item {
+            width: 200px;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Grow</h2>
+        <div class="container shrink wrap">
+            <div class="item  flex-shrink-0">0 lorem asasasasa</div>
+            <div class="item  flex-shrink-3">1 lorem sasasassa</div>
+            <div class="item  flex-shrink-0">2 lorem sasasasas</div>
+            <div class="item  flex-shrink-0">3 lorem sasasasas</div>
+        </div>
+    </section>
+</body>
+
+</html>
