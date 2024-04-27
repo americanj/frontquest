@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            height: 200px;
+            border: solid 1px red;
+            flex-direction: row;
+        }
+
+        .item {
+            display: flex;
+            height: 50px;
+            background: blue;
+            margin: 5px;
+        } 
+        
+        .flex {
+            flex: 0 1 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Grow</h2>
+        <div class="container flex-exemplo">
+            <div class="item flex">0 carro</div>
+            <div class="item flex">1 carro camelo</div>
+            <div class="item flex">2 carro camelo faca</div>
+            <div class="item flex">3 </div>
+        </div>
+    </section>
+</body>
+
+</html>
