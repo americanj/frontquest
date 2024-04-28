@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+
+        .flex {
+            display: flex;
+            height: 300px;
+            width: 300px;
+            background-color: darkblue;
+
+    
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex h2 {
+            font-size: 60px;
+        }
+
+        .container {
+            display: flex;
+            width: 960px;
+
+            border: solid 1px red;
+            flex-wrap: wrap;
+            
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            
+            /*assim*/
+            /*width: 250px;*/
+            
+            /*ou assim tanto faz*/
+            flex: 0 1 250px;
+            margin: 1em;
+            border: solid 1px yellow;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: 100px;
+        }
+
+        .botao {
+            align-self: flex-start;
+            margin-top: auto;
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Centralizacao vertical</h1>
+
+        <div class="flex painel"><h2>titulo 1</h2></div>
+    </section>
+
+    <section>
+        <h3>cards</h3>
+
+        <div class="container">
+            <div class="card">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01.jpg" alt="">
+                <h3>rio de janeiro</h3>
+                <p>Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana and Ipanema beaches, 38m Christ the Redeemer statue atop Mount Corcovado and for Sugarloaf Mountain, a granite peak with cable cars to its summit. The city is also known for its sprawling favelas (shanty towns). Its raucous Carnaval festival, featuring parade floats, flamboyant costumes and samba dancers, is considered the world’s largest.</p>
+
+                <a class="botao" href="">Visitar</a>
+            </div>
+
+            <div class="card">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01.jpg" alt="">
+                <h3>rio de janeiro</h3>
+                <p>Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana and Ipanema beaches, 38m Christ the Redeemer statue atop Mount Corcovado and for Sugarloaf Mountain, a granite peak with</p>
+
+                <a class="botao" href="">Visitar</a>
+            </div>
+
+            <div class="card">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01.jpg" alt="">
+                <h3>rio de janeiro</h3>
+                <p>Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabanaand Ipanema beaches, 38m Christ the Redeemer statue atop Mount Corcovado and for Sugarloaf Mountain, a granite peak with cable cars to its summit. The city is also known for its sprawling favelas (shanty towns). Its raucous Carnaval </p>
+
+                <a class="botao" href="">Visitar</a>
+            </div>
+
+            <div class="card">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01.jpg" alt="">
+                <h3>rio de janeiro</h3>
+                <p>Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana</p>
+
+                <a class="botao" href="">Visitar</a>
+            </div>
+
+            <div class="card">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01.jpg" alt="">
+                <h3>rio de janeiro</h3>
+                <p>Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana and Ipanema beaches, 38m Christ the Redeemer statue atop Mount Corcovado and for Sugarloaf Mountain, a granite peak with cable cars to its summit. The city is also known for its sprawling favelas (shanty towns). Its raucous Carnaval festival, featuring parade floats, flamboyant costumes and samba dancers, is considered the world’s largest.</p>
+
+                <a class="botao" href="">Visitar</a>
+            </div>
+
+            <div class="card">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01.jpg" alt="">
+                <h3>rio de janeiro</h3>
+                <p>Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana and Ipanema beaches, 38m Christ the Redeemer statue atop Mount Corcovado and for Sugarloaf Mountain, a granite peak with cable cars to its summit. The city is also known for its sprawling favelas (shanty towns). Its raucous Carnaval festival, featuring parade floats, flamboyant costumes and samba dancers, is considered the world’s largest.</p>
+
+                <a class="botao" href="">Visitar</a>
+            </div>
+
+            <div class="card">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01.jpg" alt="">
+                <h3>rio de janeiro</h3>
+                <p>Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana and Ipanema beaches, 38m Christ the Redeemer statue atop Mount Corcovado and for Sugarloaf Mountain, a granite peak with cable cars to its summit. The city is also known for its sprawling favelas (shanty towns). Its raucous Carnaval festival, featuring parade floats, flamboyant costumes and samba dancers, is considered the world’s largest.</p>
+
+                <a class="botao" href="">Visitar</a>
+            </div>
+
+            <div class="card">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01.jpg" alt="">
+                <h3>rio de janeiro</h3>
+                <p>Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana and Ipanema beaches, 38m Christ the Redeemer statue atop Mount Corcovado and for Sugarloaf Mountain, a granite peak with cable cars to its summit. The city is also known for its sprawling favelas (shanty towns). Its raucous Carnaval festival, featuring parade floats, flamboyant costumes and samba dancers, is considered the world’s largest.</p>
+
+                <a class="botao" href="">Visitar</a>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
