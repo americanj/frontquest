@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+:root {
+    --cor-fundo: #282a36;
+    --text-color: hsl(227, 10%, 46%);
+    --cor-fonte: #f8f8f2;
+    --cor-verde: #50fa7b;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: "Open Sans", sans-serif;
+}
+
+.card-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: #44475a;
+    border: solid 2px var(--cor-verde)	;
+    border-radius: 15px;
+   
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.card .nome {
+    margin-top: 30px;
+    font-size: 2rem;
+    color: var(--cor-verde);
+    
+}
+
+.card .idade {
+    color: var(--cor-fonte);
+    margin-left: 5px;
+}
+
+.card .pais {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-top: 20px;
+    color: var(--cor-fonte);
+}
+
+.card-menu .profile-numbers{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+.info .counter {
+    margin-top: 40px;
+    color: #50fa7b;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.info .counter-type {
+    color: var(--cor-fonte);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 576px) {
+    .card-menu {
+        width: 350px;
+    }
+
+    .card .nome {
+        font-size: 1.7rem;
+    }
+
+    .card .pais {
+        font-size: 1.7rem;
+    }
+
+    .info .counter {
+        font-size: 1.5rem;
+    }
+}
