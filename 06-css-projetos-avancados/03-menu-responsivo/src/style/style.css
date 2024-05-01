@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    list-style: none;
+    text-decoration: none;    
+}
+
+a:visited {
+    color: black;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-size: 1.25rem;
+  
+}
+
+header {
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+/*.logo li {
+    display: inline;
+}*/
+
+
+.logo li a {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.links li a {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 10px 20px;
+}
+
+
+.links .btn-cadastrar {
+    color: var(--cor-fundo);
+    background-color: var(--cor-hover);
+    border-radius: 5px;
+}
+
+.links li a:hover {
+    background-color: var(--cor-hover);
+    padding: 10px 20px;
+    color: var(--cor-fundo);
+    transition: 10ms all;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 1066px) {
+    nav {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: start;
+        gap: 70px;
+    }
+
+    .logo li a {
+        font-weight: bold;
+        font-size: 2.5rem;
+        
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .links li a {
+        font-size: 2.3rem;
+    }
+}
