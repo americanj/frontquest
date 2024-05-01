@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    /*agora a fonte tá com 10px dai vamos poder mudar para 2rem vai para 20*/
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Public Sans", sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-branca);
+}
+
+.header {
+    background-color: var(--cor-nav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-left: 5px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    padding: 10px 5px;
+    margin-left: 1.5rem;
+    transition: 0.3s ease-in-out;
+    font-size: 2rem;
+}
+
+.menu li a:hover {
+    background-color: var(--cor-texto);
+    color: black;
+}
+
+.menu li a.btn {
+    background-color: var(--cor-texto);
+    color: black;
+    border-radius: 10px;
+    margin-left: 2rem;
+    padding: 10px 20px;
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo h1 {
+        font-size: 4rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .menu li {
+        padding: 33px 0;
+    }
+
+    .menu li:last-child {
+        margin-top: 20px;
+    }
+
+    .menu li a {
+        font-size: 4rem;
+        padding: 17px 40px;
+    }
+
+    .menu li a.btn {
+        font-size: 1.8rem;
+        padding: 15px 23px;
+    }
+}
