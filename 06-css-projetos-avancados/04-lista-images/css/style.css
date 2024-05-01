@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Public Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #282a36;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.container li div p {
+    font-weight: 700;
+    color: white;
+    font-size: 3rem;
+}
+
+.container li div span {
+    color: white;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+    
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 4rem 2rem;
+}
+
+.container li div {
+    width: 335px;
+    height: 432px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container li .roma   {
+    background-image: url('./img/rome.png');
+}
+
+.container li .boat   {
+    background-image: url('./img/boat.png');
+}
+
+.container li .sand   {
+    background-image: url('./img/sand-and-sea.png');
+}
+
+.container li .starry   {
+    background-image: url('./img/starry-night.png');
+}
+
+
+@media (max-width: 720px) {
+    body {
+        height: 100%;
+    }
+
+    .container {
+        justify-content: center;
+
+       padding: 3rem 0; 
+    }
+}
