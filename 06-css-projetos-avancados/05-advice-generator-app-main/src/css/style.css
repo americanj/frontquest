@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=IM+Fell+Double+Pica:ital@0;1&display=swap');
+
+
+body {
+    background: linear-gradient(45deg, #000, #282a36);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.card {
+    width: 550px;
+    height: 332px;
+    background: linear-gradient(45deg, #000, #282a36);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.card h2 {
+    color: #f8f8f2;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 50px;
+    text-align: justify;
+    padding: 0 50px;
+}
+
+.card h2 span {
+
+   
+}
