@@ -21,7 +21,18 @@
         .container {
             display: grid;
             grid-template-columns: auto auto;
-            grid-template-rows: 50px;
+            
+            /*grid-template-rows: 200px 200px;*/
+            /*essa opção faz a mesma coisa da de cima só que você escreve menos*/
+            /*grid-template-rows: repeat(2, 200px);*/
+
+            /*resumindo tudo acima. 1° valor linha 2° valor coluna.*/
+            /*grid-template: repeat(1, 150px) / repeat(2, auto);*/
+
+            /*grid-gap: 20px;
+            grid-column-gap: 150px;*/
+
+            gap: 50px 10px;
         }
     </style>
 </head>
