@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            color: white;
+            background-color: black;
+        }
+
+        .verde {
+            background: green;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+
+        .rosa {
+            background-color: fuchsia;
+        }
+
+        .laranja {
+            background-color: orange;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+
+        .marrom {
+            background-color: burlywood;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            grid-template-rows: repeat(3, auto);
+            gap: 15px;
+        }
+
+        .verde {
+            /*grid-column-start: 1;*/
+
+            /*se eu quero que vá até a 2 coluna ponha 3*/
+            /*grid-column-end: 3;*/
+
+            /*resumindo. se voce usar o span agora sim ele vai até a 2*/
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+        }
+
+        .span {
+            /*acima ja tem um elemento ocupando o espaco, ent ele vai quebrar para baixo.*/
+            grid-column: 1 / span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Grid - Ocupando Espaços</h1>
+
+    <div class="container">
+        <div class="verde">1</div>
+        <div class="azul span">2</div>
+        <div class="rosa">3</div>
+        <div class="laranja">4</div>
+        <div class="vermelho">5</div>
+        <div class="marrom">6</div>
+    </div>
+</body>
+</html>
