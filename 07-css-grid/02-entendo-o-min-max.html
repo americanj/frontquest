@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .container div {
+            border: 1px solid red;
+            background-color: peru;
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            
+            grid-template-columns: minmax(100px, 800px) repeat(2, minmax(100px, 300px)) minmax(auto, auto);
+        }
+    </style>
+</head>
+<body>
+    <h1>min max</h1>
+
+    <div class="container">
+        <div>
+            Ajusta o conteudo no minimo em 100px <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, ipsum ex? Ratione temporibus aspernatur delectus magni, enim eos minus quibusdam deserunt repudiandae odio quae, quas reprehenderit libero placeat consequuntur modi.
+        </div>
+
+        <div>
+            ajusta o conteudo no máximo 200px <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatum modi at est, accusantium quae quisquam repellat sed error, ea ad! Odio, possimus qui veniam dolore culpa voluptas excepturi architecto.
+        </div>
+        <div>ajusta o conteudo no minimo 200px <br></div>
+        <div>maximo 1fr <br></div>
+        <div>cel 5</div>
+        <div>cel 6</div>
+        <div>cel 7</div>
+        <div>cel 8</div>
+    </div>
+</body>
+</html>
