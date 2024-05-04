@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f2;
+        }
+
+        .container {
+            display: grid;
+            padding: 3em;
+            gap: 2em;
+            /*grid-template-columns: repeat(4, minmax(200px, 1fr));*/
+            
+            /*usando o auto-fit nao precisa por 4 colucas, ele vai se alocar automaticamente. Veja que só com isso nao precisamos usar o media lá em baixo.*/
+            /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+
+            /*O auto fill vai parar exatamente no 200px nao vai forçar para caber tudo na tela.*/
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));   
+        }
+
+        .container p {
+            padding: 2em;
+            border-radius: .3em;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);         
+        }
+
+        /*responsivo com media*/
+
+        /*@media (min-width: 550px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 750px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 950px) {
+            .container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam odio quis alias, tempora libero quos facere reiciendis, impedit repellat eos asperiores delectus. Possimus ipsum laborum vero corrupti aliquid, commodi reprehenderit.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam odio quis alias, tempora libero quos facere reiciendis, impedit repellat eos asperiores delectus. Possimus ipsum laborum vero corrupti aliquid, commodi reprehenderit.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam odio quis alias, tempora libero quos facere reiciendis, impedit repellat eos asperiores delectus. Possimus ipsum laborum vero corrupti aliquid, commodi reprehenderit.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam odio quis alias, tempora libero quos facere reiciendis, impedit repellat eos asperiores delectus. Possimus ipsum laborum vero corrupti aliquid, commodi reprehenderit.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam odio quis alias, tempora libero quos facere reiciendis, impedit repellat eos asperiores delectus. Possimus ipsum laborum vero corrupti aliquid, commodi reprehenderit.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam odio quis alias, tempora libero quos facere reiciendis, impedit repellat eos asperiores delectus. Possimus ipsum laborum vero corrupti aliquid, commodi reprehenderit.</p>
+        </div>
+    </div>
+</body>
+</html>
