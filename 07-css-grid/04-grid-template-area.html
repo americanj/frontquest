@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: black;
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cabecalho {
+            background-color: aquamarine;
+        }
+
+        .menu {
+            background-color: cornflowerblue;
+        }
+
+        .secao-principal {
+            background-color: hotpink;
+        }
+
+        .aside {
+            background-color: orangered;
+        }
+
+        .rodape {
+            background-color: green;
+        }
+
+        .container {
+            display: grid;
+
+            /*vai ocupar 3 espaços. funciona como linha e colucas*/
+            /*grid-template-areas: 
+            "cabecalho cabecalho cabecalho"
+            "menu secao-principal aside" 
+            "rodape rodape rodape";*/
+
+            /*modo abreviado.*/
+            grid:
+            "cabecalho cabecalho cabecalho" 200px
+            "menu secao-principal aside" 400px
+            "rodape rodape rodape" 250px
+            / 160px auto    60px;
+        }
+
+        /*dando nome para as parte do html*/
+
+        .cabecalho {
+            grid-area: cabecalho;
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .secao-principal {
+            grid-area: secao-principal;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .rodape {
+            grid-area: rodape;
+        }
+    </style>
+</head>
+<body>
+    <h1>grid template area</h1>
+    <div class="container">
+        <header class="cabecalho">Header</header>
+        <nav class="menu">navegation</nav>
+        <section class="secao-principal">
+            <h1>Seção principal</h1>
+        </section>
+        <aside class="aside">aside</aside>
+        <footer class="rodape">rodape</footer>
+    </div>
+</body>
+</html>
