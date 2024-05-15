@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 10rem;
+    height: 100vh;
+    border: solid 1px palegreen;
+}
+
+main {
+    padding: 5rem;
+    display: grid;
+    grid: 
+    "principal aside";
+}
+
+.video-principal {
+    border: solid 1px red;
+    grid-area: principal;
+}
+
+.tela-principal {
+    background-color: gray;
+    height: 300px;
+   
+
+}
+
+.aside {
+    border: solid 1px yellow;
+    grid-area: aside;
+}
+
+.aside .propaganda {
+    background-color: gray;
+}
