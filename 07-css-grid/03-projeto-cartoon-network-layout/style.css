@@ -1,84 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 @font-face {
-    font-family: 'Avenir Roman';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir Roman'), url('./src/font/avenir_roman_12.woff') format('woff');
+  font-family: "Avenir Roman";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Roman"),
+    url("./src/font/avenir_roman_12.woff") format("woff");
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Avenir Roman', sans-serif;
+  font-size: 62.5%;
+  font-family: "Avenir Roman", sans-serif;
 }
 
-*, *:before, *:after {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Public Sans", sans-serif;
+*,
+*:before,
+*:after {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
 }
 
 :root {
-    --cor-preto-claro: #010103;
-    --cor-preto-escuro: #000000;
+  --cor-preto-claro: #010103;
+  --cor-preto-escuro: #000000;
 }
 
-
 body {
-    background-color: var(--cor-preto-escuro);
-    color: white;
+  background-color: var(--cor-preto-escuro);
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
-    display: flex;
-    padding: 2rem 4rem 0 4rem;
+  display: flex;
+  padding: 2rem 4rem 0 4rem;
 }
 
 .logo img {
-    width: 200px;
+  width: 200px;
 }
 
 .navegacao {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .navegacao ul {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 20rem;
-    
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
 }
 
 .container-menu {
-    display: flex;
-    flex-direction: column;
-    transition: 0.1s ease-in-out;
-    
+  display: flex;
+  flex-direction: column;
+  transition: 0.1s ease-in-out;
 }
 
 .container-menu:hover {
-    border-bottom: solid white 4px;
-    cursor: pointer;
+  border-bottom: solid white 4px;
+  cursor: pointer;
 }
 
 .container-menu img {
-    width: 4rem;
-    margin: 0 auto;
+  width: 4rem;
+  margin: 0 auto;
 }
 
-.fa-gamepad, .fa-clock {
-    font-size: 3rem;
+.fa-gamepad,
+.fa-clock {
+  font-size: 3rem;
 }
 
 .container-menu span {
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 500;
-  
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+
+section {
+  display: grid;
+  grid-template-areas:
+    "video-destaque propaganda"
+    "video-destaque videos-sugeridos";
+  grid-template-columns: 1fr 365px;
+  grid-template-rows: 150px 1fr;
+  gap: 20px;
+
+  margin-top: 2rem;
+}
+
+.video-destaque {
+  grid-area: video-destaque;
+}
+
+.video-destaque video {
+  width: 100%;
+}
+
+.informacoes h1 {
+  font-size: 2rem;
+}
+
+.informacoes .visualizacoes {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.informacoes .descricao {
+  text-align: justify;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.propaganda {
+  grid-area: propaganda;
+}
+
+.propaganda img {
+  width: 100%;
+  height: 100%;
+}
+
+.videos-sugeridos {
+  grid-area: videos-sugeridos;
+}
+
+.videos-sugeridos .video {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 10px;
+}
+
+.videos-sugeridos .video video {
+  width: 150px;
+}
+
+.informacoes-videos-destaques .titulo,
+.informacoes-videos-destaques .visualizacoes,
+.informacoes-videos-destaques .titulo .tempo,
+.informacoes-videos-destaques h2 {
+  margin-bottom: 1rem;
 }
