@@ -1,9 +1,9 @@
 
 
-let boletoPago = true;
+let boletoPago = false;
 
 if (boletoPago) {
     console.log("Boleto Pago!");
-} else {
+} else if (boletoPago === false){
     console.log("Boleto não Pago!");
 }
