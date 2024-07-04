@@ -1,10 +1,10 @@
 
 // slice
-/*let frutas = ['banana', 'maçã', 'laranja', 'uva']
+let frutas = ['banana', 'maçã', 'laranja', 'uva']
 
-let frutasExtraidas = frutas.slice(1, 3)
+let frutasExtraidas = frutas.slice(1, 2)
 
-console.log(frutasExtraidas);*/
+console.log(frutasExtraidas);
 
 /*
 //splice
@@ -17,8 +17,8 @@ console.log(arrayNovo);*/
 
 //splice com substituição
 
-let frutas = ['banana', 'maçã', 'laranja', 'uva']
+/*let frutas = ['banana', 'maçã', 'laranja', 'uva']
 
 let removerAndAdicionarNovasFrutas = frutas.splice(0, 2, "Goiana", "abacaxi")
 
-console.log(frutas);
+console.log(frutas);*/
