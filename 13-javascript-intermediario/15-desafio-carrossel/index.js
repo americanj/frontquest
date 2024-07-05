@@ -53,6 +53,28 @@ setaEsquerda.addEventListener('click', () => {
     }
 });
 
+setaDireita.addEventListener('click', () => {  
+
+    const regex = /url\(("[^"]+")\)/;
+    const match = body.style.backgroundImage.match(regex);
+
+    if (match) {
+        const caminhoCapaFormatado = match[1];
+
+        const urlCapaCoringa = JSON.stringify(`${filmes[0].capa}`);
+        const urlCapaCarro = JSON.stringify(`${filmes[1].capa}`);
+
+        if (caminhoCapaFormatado === urlCapaCoringa) 
+            setarComponentesDoFilme(`url(${filmes[1].capa})`, `${filmes[1].titulo}`, `${filmes[1].descricao}`);
+       
+        else if (caminhoCapaFormatado === urlCapaCarro) 
+            setarComponentesDoFilme(`url(${filmes[2].capa})`, `${filmes[2].titulo}`, `${filmes[2].descricao}`);
+             
+        else 
+            setarComponentesDoFilme(`url(${filmes[0].capa})`, `${filmes[0].titulo}`, `${filmes[0].descricao}`);
+    }
+});
+
 
 function setarComponentesDoFilme(urlCapa, titulo, descricao) {
     body.style.backgroundImage = urlCapa;

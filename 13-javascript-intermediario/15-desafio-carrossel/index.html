@@ -30,6 +30,7 @@
             border: solid 1px rgba(255, 255, 255, 0.381);
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
+            position: relative;
         }
 
         section h1 {
@@ -44,38 +45,54 @@
         }
 
         section a {
-            margin-top: 50px;
-            display: block;
+            position: absolute;
+            bottom: 60px;
+           
+            
             font-size: 1.25rem;
         }
 
         .seta-esquerda {
             position: absolute;
             margin: auto;
-            left: 0;
+            left: 30px;
             top: 0;
             bottom: 0;
             
-            background-image: url('./img/esquerda.svg');
+            background-image: url('./img/download.svg');
             background-repeat: no-repeat;
             background-size: cover;
             width: 100px;
             height: 100px;
             color: white;
+            background-color: rgba(255, 255, 255, 0.431);
+            border-radius: 50px;
+            border: solid 2px transparent;
+
         }
 
         .seta-direita {
             position: absolute;
             margin: auto;
-            right: 0;
+            right: 30px;
             top: 0;
             bottom: 0;
-            background-image: url('./img/direita.svg');
+            background-image: url('./img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg');
             background-repeat: no-repeat;
             background-size: cover;
             width: 100px;
             height: 100px;
             color: white;
+            background-color: rgba(255, 255, 255, 0.431);
+            border-radius: 50px;
+            border: solid 2px transparent;
+        }
+
+        .seta-direita:hover, .seta-esquerda:hover {
+            border: solid 2px greenyellow;
+            transform: scale(1.10);
+            cursor: pointer;
+            transition: ease-in-out 100ms;
         }
     </style>
 </head>
