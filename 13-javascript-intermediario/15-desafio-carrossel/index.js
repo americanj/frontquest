@@ -30,8 +30,22 @@ const setaEsquerda = document.getElementsByClassName('seta-esquerda')[0];
 const setaDireita = document.getElementsByClassName('seta-direita')[0];
 
 
+const urlCapaCoringa = JSON.stringify(`${filmes[0].capa}`);
+const urlCapaVingador = JSON.stringify(`${filmes[2].capa}`);
+const urlCapaCarro = JSON.stringify(`${filmes[1].capa}`);
+
+
+const regex = /url\(("[^"]+")\)/;
+const match = body.style.backgroundImage.match(regex);
+
+if (match) {
+    const caminhoCapaFormatado = match[1];
+    if (caminhoCapaFormatado === urlCapaCoringa) setaEsquerda.classList.add('seta-esquerda-desativado');
+}
+
+
 // action
-setaEsquerda.addEventListener('click', () => {  
+setaEsquerda.addEventListener('click', () => {
 
     const regex = /url\(("[^"]+")\)/;
     const match = body.style.backgroundImage.match(regex);
@@ -39,21 +53,18 @@ setaEsquerda.addEventListener('click', () => {
     if (match) {
         const caminhoCapaFormatado = match[1];
 
-        const urlCapaCoringa = JSON.stringify(`${filmes[0].capa}`);
-        const urlCapaVingador = JSON.stringify(`${filmes[2].capa}`);
-
-        if (caminhoCapaFormatado === urlCapaCoringa) 
-            setarComponentesDoFilme(`url(${filmes[2].capa})`, `${filmes[2].titulo}`, `${filmes[2].descricao}`);
-       
-        else if (caminhoCapaFormatado === urlCapaVingador) 
-            setarComponentesDoFilme(`url(${filmes[1].capa})`, `${filmes[1].titulo}`, `${filmes[1].descricao}`);
-             
-        else 
+        if (caminhoCapaFormatado === urlCapaCarro) {
             setarComponentesDoFilme(`url(${filmes[0].capa})`, `${filmes[0].titulo}`, `${filmes[0].descricao}`);
+            setaEsquerda.classList.add('seta-esquerda-desativado');
+
+        } else if (caminhoCapaFormatado === urlCapaVingador) {
+            setarComponentesDoFilme(`url(${filmes[1].capa})`, `${filmes[1].titulo}`, `${filmes[1].descricao}`);
+            setaDireita.classList.remove('seta-direita-desativado');
+        } 
     }
 });
 
-setaDireita.addEventListener('click', () => {  
+setaDireita.addEventListener('click', () => {
 
     const regex = /url\(("[^"]+")\)/;
     const match = body.style.backgroundImage.match(regex);
@@ -61,17 +72,14 @@ setaDireita.addEventListener('click', () => {
     if (match) {
         const caminhoCapaFormatado = match[1];
 
-        const urlCapaCoringa = JSON.stringify(`${filmes[0].capa}`);
-        const urlCapaCarro = JSON.stringify(`${filmes[1].capa}`);
-
-        if (caminhoCapaFormatado === urlCapaCoringa) 
+        if (caminhoCapaFormatado === urlCapaCoringa) {
             setarComponentesDoFilme(`url(${filmes[1].capa})`, `${filmes[1].titulo}`, `${filmes[1].descricao}`);
-       
-        else if (caminhoCapaFormatado === urlCapaCarro) 
+            setaEsquerda.classList.remove('seta-esquerda-desativado');
+
+        } else if (caminhoCapaFormatado === urlCapaCarro) {
             setarComponentesDoFilme(`url(${filmes[2].capa})`, `${filmes[2].titulo}`, `${filmes[2].descricao}`);
-             
-        else 
-            setarComponentesDoFilme(`url(${filmes[0].capa})`, `${filmes[0].titulo}`, `${filmes[0].descricao}`);
+            setaDireita.classList.add('seta-direita-desativado');
+        } 
     }
 });
 

@@ -69,6 +69,8 @@
             border-radius: 50px;
             border: solid 2px transparent;
 
+            
+
         }
 
         .seta-direita {
@@ -93,6 +95,16 @@
             transform: scale(1.10);
             cursor: pointer;
             transition: ease-in-out 100ms;
+        }
+
+        .seta-esquerda-desativado, .seta-direita-desativado {
+            opacity: 50%;
+            border: solid 2px transparent;
+        }
+
+        .seta-esquerda-desativado:hover, .seta-direita-desativado:hover {
+            border: solid 2px red;
+            transform: scale(1);
         }
     </style>
 </head>
