@@ -1,0 +1,18 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+a, a:visited {
+    color: rgba(255, 255, 255, 0.864);
+}
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,106 @@
+body {
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    /*border: solid 1px red;*/
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    /*position: relative;*/
+    /*width: 655px;
+    height: 347px;*/
+    width: 700px;
+    padding: 4rem;
+    border-radius: 20px;  
+}
+
+.conteudo {
+    /*border: solid 1px red;*/
+    width: 100%;
+}
+
+.logo {
+    /*position: absolute;
+    left: -70px;*/
+    margin-left: -12rem;
+    margin-right: 5rem;
+}
+
+.titulo {
+    font-size: 2.7rem;
+}
+
+.titulo-padrao {
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+    font-weight: 600;
+    /*border: solid 1px pink;*/
+    
+}
+
+.titulo-padrao .fa-user, .titulo-padrao .fa-wrench, .titulo-padrao .fa-tv {
+    margin-right: 10px;
+    font-size: 2.7rem;
+}
+
+.fa-caret-down {
+    position: absolute;
+    right: 0;
+    font-size: 2.5rem;
+    color: rgb(162, 162, 162);
+}
+
+.fa-caret-down.animaco {
+    rotate: 180deg;
+    color: red;    
+}
+
+a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul li {
+    margin-top: 20px;
+}
+
+hr {
+    margin: 15px 0 20px 0;
+    opacity: 40%;
+    
+}
+
+.fa-file-lines {
+    margin-right: 10px;
+}
+
+
+.escondera {
+    display: none;
+}
+
+
+@keyframes rotate-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(160deg);
+    }
+}
