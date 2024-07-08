@@ -22,7 +22,6 @@ body {
 }
 
 .conteudo {
-    /*border: solid 1px red;*/
     width: 100%;
 }
 
@@ -60,11 +59,13 @@ body {
     right: 0;
     font-size: 2.5rem;
     color: rgb(162, 162, 162);
+    cursor: pointer;
 }
 
-.fa-caret-down.animaco {
+.fa-caret-down.animacao {
     rotate: 180deg;
     color: red;    
+    transition: 300ms;
 }
 
 a {
@@ -91,10 +92,9 @@ hr {
 }
 
 
-.escondera {
+.esconder {
     display: none;
 }
-
 
 @keyframes rotate-animation {
     from {
