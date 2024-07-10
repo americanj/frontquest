@@ -52,7 +52,7 @@ ferverAqua(chaleiraTaNoFogo, fogaoEstaLigado)
     })
 */
 
-let chaleiraTaNoFogo = true;
+let chaleiraTaNoFogo = false;
 let fogaoEstaLigado = true;
 
 // Forma superior ao then
