@@ -21,4 +21,4 @@ const calcularValorPedido = pedido => {
 }
 
 
-console.log(calcularValorPedido(meuPedido));
+//console.log(calcularValorPedido(meuPedido));

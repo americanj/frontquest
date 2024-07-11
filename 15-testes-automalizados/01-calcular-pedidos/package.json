@@ -1,0 +1,15 @@
+{
+  "name": "01-calcular-pedidos",
+  "version": "1.0.0",
+  "main": "calcular-pedido.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch *.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
