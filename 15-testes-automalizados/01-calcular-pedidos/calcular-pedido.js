@@ -1,10 +1,3 @@
-const meuPedido = {
-    items: [
-        { nome: 'Poção de vida', valor: 100 },
-        { nome: 'Espada de prata', valor: 200 },
-        { nome: 'Entrega', valor: 40, entrega: true }
-    ]
-}
 
 const calcularValorPedido = pedido => {
     const valorDosProdutos = pedido.items.filter(item => !item.entrega)
@@ -19,6 +12,8 @@ const calcularValorPedido = pedido => {
         return valorDosProdutos + entrega[0].valor;
     }
 }
+
+module.exports = calcularValorPedido;
 
 
 //console.log(calcularValorPedido(meuPedido));
