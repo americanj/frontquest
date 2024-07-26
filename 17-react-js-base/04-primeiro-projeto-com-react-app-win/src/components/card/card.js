@@ -3,11 +3,12 @@ import React from 'react'
 import './card.css'
 
 // Usando props em função
-const Card = ({title}) => {
+
+
+const Card = (props) => {
     return (
         <div className="card">
-            <h3>{title}</h3>
-            <p>esse é um parágrafo</p>
+           {props.children}
         </div>
     );
 }
