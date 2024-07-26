@@ -1,9 +1,5 @@
 import React from 'react'
-
 import './card.css'
-
-// Usando props em função
-
 
 const Card = (props) => {
     return (
